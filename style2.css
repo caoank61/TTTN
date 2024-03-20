@@ -28,7 +28,8 @@ nav{
 }
 .nav-links{
 	flex: 1;
-	text-align: right;
+	text-align: right; 
+	right: 30%;
 }
 .nav-links ul li{
 	list-style: none;

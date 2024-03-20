@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RealPhone - Easy Tutorials</title>
+	<title>Demo TTCM</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style2.css">
 	<meta charset="UTF-8">
@@ -15,9 +15,8 @@
 			<div class="nav-links">
 				<ul>
 					<li><a href="index.php" id="homeBtn">Home</a></li>
-					<li><a href="#"></a>Phone</li>
-					<li><a href="#"></a>Accessories</li>
-					<li><a href="#"></a>Cart</li>
+					<li><a href="product.php" id="productBtn">Product</a></li>
+					<li><a href="infomation.php" id="infoBtn">Infomaiton</a></li>
 					<li><a href="index2.php" id="loginBtn">Login</a></li>
 				</ul>
 			</div>
@@ -25,6 +24,7 @@
 		<div class="information">
 			<div class="overlay"></div>
 			<img src="images/PA820.jpg" class="PA820">
+			<h1>PA820</h1>
 			<div id="circle">
 				<div class="feature one">
 					<img src="images/construction.png">

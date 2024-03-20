@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Itim', cursive;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+nav {
+  width: 80%;
+  position: sticky;
+  margin: 15px auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo {
+  flex-basis: 60%;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  margin-top: 150px;
+}
+
+.item {
+  width: 300px; /* Kích thước cố định cho mỗi sản phẩm */
+  text-align: center;
+  background-color: azure;
+  border-radius: 10px;
+  padding: 2%;
+ }
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Bo tròn góc */
+}
+
+.item h2 {
+  margin-top: 10px;
+}
+
+.detail {
+  display: none; /* Ẩn chi tiết sản phẩm ban đầu */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #eb92f7, #8ecdff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.detail.active {
+  display: block; /* Hiển thị chi tiết sản phẩm khi active */
+}
+
+.detail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.item h2{
+  margin-top: 10px;
+}
