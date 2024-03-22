@@ -19,25 +19,37 @@ nav{
 	align-items: center;
 }
 .logo{
-    flex-basis:60%;
+    flex-basis:50%;
     display: flex; /* Thêm dòng này để sử dụng flexbox */
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
 .logo img{
-    width: 120px;
+    width: 100px;
     margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
 .nav-links{
-	flex: 1;
+	/* flex: 1;
 	text-align: right; 
-	right: 30%;
+	right: 50%; */
+	flex: 1;
+    text-align: right; /* Căn chỉnh văn bản sang phải */
+}
+.nav-links ul{
+	list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .nav-links ul li{
-	list-style: none;
+	/* list-style: none;
 	display: inline-block;
 	margin: 0 60px;
-	margin-left: 60px;
+	margin-left: 60px; */
+	display: inline-block; /* Hiển thị các mục menu theo hàng ngang */
+    margin-left: 20px; /* Khoảng cách giữa các mục menu */
+}
+.nav-links ul li:first-child{
+	margin-left: 0; /* Không margin-left cho phần tử đầu tiên */
 }
 .nav-links ul li a{
 	color: #fff;
@@ -143,3 +155,4 @@ nav{
 	left: 0;
 	top: 0;
 }
+
