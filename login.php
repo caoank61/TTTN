@@ -20,23 +20,25 @@ if(isset($_POST['uname']) && isset($_POST['password'])) {
         header("Location: index.php?error= Mật Khẩu Không Được Để Trống!");
         exit();
     }
-    $sql = "SELECT * FROM users WHERE user_name = '$uname'"; 
-    $result = mysqli_query($conn, $sql);
-    if(mysqli_num_rows($result) > 0){
-        $row = mysqli_fetch_assoc($result);
-        if(password_verify($pass, $row['password'])){
-            echo "Đăng Nhập Thành Công";
-            $_SESSION['user_name'] = $row['user_name'];
-            $_SESSION['name'] = $row['name'];
-            $_SESSION['id'] = $row['id'];
-            header("Location: home.php"); //Chuyen huong sang home.php
-            exit();
-        } else {
-            header("Location: index.php?error= Mật Khẩu Không Chính Xác!");
-            exit();
-        }
-    } else {
-        header("Location: index.php?error= Người Dùng Không Tồn Tại! Vui Lòng Kiểm Tra Lại Tên Đăng Nhập Và Mật Khẩu.");
+$sql = "SELECT * FROM users WHERE user_name = '$uname' AND password = '$pass'"; 
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result)===1){
+    $row = mysqli_fetch_assoc($result);
+    if($row['user_name']== $uname && $row['password'] === $pass){ 
+        echo "Đăng Nhập Thành Công";
+        $_SESSION['user_name'] = $row['user_name'];
+        $_SESSION['name'] = $row['name'];
+        $_SESSION['id'] = $row['id'];
+        header("Location: home.php"); //Chuyen huong sang home.php
         exit();
     }
+    else {
+        header("Location: index.php?error= Người Dùng Không Tồn Tại! Vui Lòng Kiểm Tra Lại Tên Đăng Nhập Và Mật Khẩu.");
+        header("Location: index.php");
+    }
+} 
+else {
+    header("Location: index.php"); //Chuyen huong ve index.php
+    exit();
+}
 }
