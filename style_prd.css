@@ -39,8 +39,7 @@ nav{
 .nav-links ul li{
 	list-style: none;
 	display: inline-block;
-	margin: 0 60px;
-	margin-left: 60px;
+	margin: 0 40px;
 }
 .nav-links ul li a{
 	color: #fff;

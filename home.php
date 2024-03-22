@@ -18,16 +18,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 			</div>
 			<div class="nav-links">
 				<ul>
-					<li><a href="home.php" id="homeBtn">Home</a></li>
-					<li><a href="product.php" id="productBtn">Product</a></li>
-					<li><a href="infomation.php" id="infoBtn">Infomaiton</a></li>
+					<li><a href="home.php" id="homeBtn">Trang Chủ</a></li>
+					<li><a href="product.php" id="productBtn">Sản Phẩm</a></li>
+					<li><a href="infomation.php" id="infoBtn">Thông Tin</a></li>
 					<li><a href="profile.php" id="loginBtn"><?php echo $_SESSION['user_name']; ?></a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="information">
 			<div class="overlay"></div>
-			<img src="images/PA820.jpg" class="PA820">
+			<img src="images/PA820.png" class="PA820">
 			<h1>PA820</h1>
 			<div id="circle">
 				<div class="feature one">

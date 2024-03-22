@@ -36,8 +36,7 @@ nav{
 .nav-links ul li{
 	list-style: none;
 	display: inline-block;
-	margin: 0 60px;
-	margin-left: 60px;
+	margin: 0 40px;
 }
 .nav-links ul li a{
 	color: #fff;
@@ -52,10 +51,10 @@ nav{
 	transform: translateY(-50%);
 }
 .PA820{
-	width: 250px;
+	width: 450px;
 	position: absolute;
 	top: 50%;
-	left: 35%;
+	left: 20%;
 	transform: translateY(-50%);
 	z-index: 1;
 	border-radius: 20px;

@@ -18,19 +18,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 			</div>
 			<div class="nav-links">
 				<ul>
-				<li><a href="home.php" id="homeBtn">Home</a></li>
-					<li><a href="product.php" id="productBtn">Product</a></li>
-					<li><a href="infomation.php" id="infoBtn">Infomaiton</a></li>
+					<li><a href="home.php" id="homeBtn">Trang Chủ</a></li>
+					<li><a href="product.php" id="productBtn">Sản Phẩm</a></li>
+					<li><a href="infomation.php" id="infoBtn">Thông Tin</a></li>
 					<li><a href="profile.php" id="loginBtn"><?php echo $_SESSION['user_name']; ?></a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="contact-container">
-            <h2>Contact Information</h2>
+            <h2>Thông tin liên hệ</h2>
             <div class="company-info">
                 <h3>Công Ty Trách Nhiệm Hữu Hạn Thương Mại Dịch Vụ Kỹ Thuật Bằng Hữu</h3>
-                <p>Address: 207/12 Đường Bạch Đằng, Bình Thạnh, Thành phố Hồ Chí Minh</p>
-                <p>Email: info@example.com</p>
+                <p>Địa chỉ: 207/12 Đường Bạch Đằng, Bình Thạnh, Thành phố Hồ Chí Minh</p>
+                <p>Email: TNHHBHCPN@gmail.com</p>
                 <p>Phone: (+84)310179163</p>
                 <div class="map">
                     <iframe
