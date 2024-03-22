@@ -14,38 +14,37 @@
   background: linear-gradient(to right, #9c27b0, #8ecdff);
 }
 
-nav {
-  width: 80%;
-  position: sticky;
-  margin: 15px auto;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-
+nav{
+	position: sticky;
+	margin: 15px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.logo{
+    flex-basis:60%;
+    display: flex; /* Thêm dòng này để sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.logo {
-  flex-basis: 60%;
+.logo img{
+    width: 120px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
-
-.logo img {
-  width: 120px;
+.nav-links{
+	flex: 1;
+	text-align: right; 
+	right: 30%;
 }
-
-.nav-links {
-  flex: 1;
-  text-align: right;
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 60px;
+	margin-left: 60px;
 }
-
-.nav-links ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.nav-links ul li a {
-  color: #fff;
-  text-decoration: none;
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
 }
 
 .container {

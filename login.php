@@ -34,11 +34,11 @@ if(mysqli_num_rows($result)===1){
     }
     else {
         header("Location: index.php?error= Người Dùng Không Tồn Tại! Vui Lòng Kiểm Tra Lại Tên Đăng Nhập Và Mật Khẩu.");
-        header("Location: index2.php");
+        header("Location: index.php");
     }
 } 
 else {
-    header("Location: index2.php"); //Chuyen huong ve index2.php
+    header("Location: index.php"); //Chuyen huong ve index.php
     exit();
 }
 }

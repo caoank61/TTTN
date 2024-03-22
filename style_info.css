@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Itim', cursive;
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, #9c27b0, #8ecdff)
+}
+nav{
+	position: sticky;
+	margin: 15px auto;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.logo{
+    flex-basis:60%;
+    display: flex; /* Thêm dòng này để sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo img{
+    width: 120px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+.nav-links{
+	flex: 1;
+	text-align: right; 
+	right: 30%;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 60px;
+	margin-left: 60px;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #b8cafd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.company-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.company-info h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    margin: 5px 0;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+

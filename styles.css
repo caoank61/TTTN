@@ -12,7 +12,6 @@
 	background: linear-gradient(to right, #9c27b0, #8ecdff)
 }
 nav{
-	width: 80%;
 	position: sticky;
 	margin: 15px auto;
 	z-index: 1;
@@ -20,11 +19,14 @@ nav{
 	align-items: center;
 }
 .logo{
-	flex-basis:60%;
-
+    flex-basis:60%;
+    display: flex; /* Thêm dòng này để sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
 }
+
 .logo img{
-	width: 120px;
+    width: 120px;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
 }
 .nav-links{
 	flex: 1;
@@ -34,7 +36,8 @@ nav{
 .nav-links ul li{
 	list-style: none;
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 60px;
+	margin-left: 60px;
 }
 .nav-links ul li a{
 	color: #fff;
@@ -132,10 +135,10 @@ nav{
 .overlay{
 	width: 0;
 	height: 0;
-	border-top: 500px solid #fff;
+	border-top: 500px solid #7caaff;
 	border-right: 500px solid transparent;
-	border-bottom: 500px solid #fff;
-	border-left: 500px solid #fff;
+	border-bottom: 500px solid #7caaff;
+	border-left: 500px solid #7caaff;
 	position: absolute;
 	left: 0;
 	top: 0;
